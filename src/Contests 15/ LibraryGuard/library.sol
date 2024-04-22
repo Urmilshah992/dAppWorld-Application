@@ -46,7 +46,7 @@ contract LibraryGuard {
         return admins[_user];
     }
 
-    function userRole(address _user) public view returns (uint) {
+    function userRole(address _user) public view returns (uint256) {
         return userRoles[_user];
     }
 }
