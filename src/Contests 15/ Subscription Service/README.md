@@ -7,11 +7,13 @@
 ## Input:
 
 ```
-incrementCounter(uint announcement_id)  : This functions increments the counter for particular announcement ID. It is known that the ID is greater than 0.
+subscribe(uint256 duration) : This function is used to subscribe the service for a duration. duration is defined in seconds. The value for activating the service is 1000 wei.
+
+cancelSubscription() : This function is used to cancel the subscription. There is no refund policy.
 ```
 
 ## OutPut:
 
 ```
-viewCounter(uint announcement_id) returns (uint) : This function returns the number of counts someone interacted with an announcement for the respective announcement ID.
+isSubscribed(address user) returns (bool): This function returns the current status of the subscription for particular user.
 ```
